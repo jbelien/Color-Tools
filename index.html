@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Color Tools</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="page-header">Color Tools</h1>
+
+			<!--[if lte IE 9]>
+				<p class="alert alert-warning">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+			<![endif]-->
+
+			<h2>Converter</h2>
+
+			<form class="form-horizontal" role="form" autocomplete="off">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">RGB</label>
+					<div class="col-sm-2">
+						<input type="number" name="r" class="form-control" step="1" min="0" max="255" placeholder="Red [0,255]">
+					</div>
+					<div class="col-sm-2">
+						<input type="number" name="g" class="form-control" step="1" min="0" max="255" placeholder="Green [0,255]">
+					</div>
+					<div class="col-sm-2">
+						<input type="number" name="b" class="form-control" step="1" min="0" max="255" placeholder="Blue [0,255]">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">CMY</label>
+					<div class="col-sm-2">
+						<input type="number" name="c" class="form-control" step="1" min="0" max="100" placeholder="Cyan [0,100]">
+					</div>
+					<div class="col-sm-2">
+						<input type="number" name="m" class="form-control" step="1" min="0" max="100" placeholder="Magenta [0,100]">
+					</div>
+					<div class="col-sm-2">
+						<input type="number" name="y" class="form-control" step="1" min="0" max="100" placeholder="Yellow [0,100]">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">CMYK</label>
+					<div class="col-sm-2">
+						<input type="number" name="cc" class="form-control" step="1" min="0" max="100" placeholder="Cyan [0,100]">
+					</div>
+					<div class="col-sm-2">
+						<input type="number" name="mm" class="form-control" step="1" min="0" max="100" placeholder="Magenta [0,100]">
+					</div>
+					<div class="col-sm-2">
+						<input type="number" name="yy" class="form-control" step="1" min="0" max="100" placeholder="Yellow [0,100]">
+					</div>
+					<div class="col-sm-2">
+						<input type="number" name="k" class="form-control" step="1" min="0" max="100" placeholder="Key [0,100]">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">HSL</label>
+					<div class="col-sm-2">
+						<input type="number" name="h" class="form-control" step="1" min="0" max="359" placeholder="Hue [0,359]">
+					</div>
+					<div class="col-sm-2">
+						<input type="number" name="s" class="form-control" step="1" min="0" max="100" placeholder="Saturation [0,100]">
+					</div>
+					<div class="col-sm-2">
+						<input type="number" name="l" class="form-control" step="1" min="0" max="100" placeholder="Lightness [0,100]">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Hexadecimal</label>
+					<div class="col-sm-2">
+						<input type="text" name="hex" class="form-control" placeholder="Value">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Decimal</label>
+					<div class="col-sm-2">
+						<input type="number" name="dec" class="form-control" step="1" min="0" max="16777215" placeholder="Value">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Preview</label>
+					<div class="col-sm-9"><div id="preview"></div></div>
+				</div>
+			</form>
+
+			<hr>
+
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="color.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
