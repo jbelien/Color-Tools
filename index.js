@@ -65,9 +65,9 @@ function setRGB(rgb, target) {
 		$('input[name=l]').val(hsl[2]);
 	}
 
+	var hex = rgb2hex(rgb); $('#preview').css('background-color', hex);
 	if (!$(target).is('input[name=hex]')) {
-		var hex = rgb2hex(rgb);
-		$('input[name=hex]').val(hex); $('#preview').css('background-color', hex);
+		$('input[name=hex]').val(hex);
 	}
 
 	if (!$(target).is('input[name=dec]')) {
